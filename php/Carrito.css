@@ -1,0 +1,435 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* ACA EMPIEZA EL CONTENEDOR PRINCIPAL */
+.contenedor-principal{
+    width: 100%;
+    margin: auto;
+    background-color: #1E1B16;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@keyframes cambiar{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+/* ACA EMPIEZA EL HEADER  */
+.cabecera{
+    background-color: #9CA741;
+    grid-column: 1 / span 4;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* EL TITULO FULL REGEDIT (HEADER) */
+.cabecera img{
+    width: 250px;
+    height: auto;
+}
+
+/* ICONO DEL CARRITO (HEADER) */
+.cabecera div img{
+    width: 85px;
+    height: 65px;
+    animation: bounce; 
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/* LETRA DE SHOP REGEDIT (HEADER) */
+.cabecera div h1{
+    font-family: 'miFuente';
+    font-size: 50px;
+    margin-left: 7px;
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
+
+@font-face{
+    font-family: 'miFuente';
+    src: url("letras/fuente1.ttf");
+}
+
+/* CONTENEDOR BOTONES (HEADER) */
+.contenedor-botones{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+/* BOTON1 Y BOTON2 (HEADER) */
+.contenedor-botones a{
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 20%;
+    text-align: center;
+    margin-right: 6px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family:'Arimo', sans-serif ;
+}
+
+/* PARRAFO DEL USUARIO (HEADER) */
+.contenedor-botones .usuario{
+    color: white;
+    font-size: 19px;
+   padding-right: 16px;
+}
+
+/*EFECTO BOTON 1 Y BOTON 2 (HEADER) */
+.contenedor-principal a:hover{
+    background-color: white;
+    color: black;
+    transition-timing-function:ease-out;
+    transition-duration: 0.80s;
+}
+
+/* CONTENEDOR DE CABECERA SHOP (HEADER)*/
+.cabecera-shop{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+}
+
+/* ACA EMPIEZA EL MENU  */
+.menu{
+    background-color: #867A60;
+    grid-column: 1 / span 4;
+
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+/* PROPIEDADES DE MENU (MENU)  */
+.menu a{
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    flex-grow: 1;
+    font-family: Acme;
+}
+
+/* ACA COMIENZA LAS BUSQUEDAS (BUSQUEDAS)*/
+.busquedas{
+    grid-column: 1/ span 4;
+    background-color: #9CA741;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:flex-end;
+}
+
+.buscar{
+    padding: 8px;
+    width: 300px;
+    outline: none;
+    font-size: 16px;
+}
+
+.boton-buscar{
+    padding: 8px;
+    width: 100px;
+    background-color: yellow;
+    color: white;
+    font-size: 16px;
+    animation-name: botonAnim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.productos{
+    grid-column: 1 / span 4;
+    background-color: #1E1B16;
+}
+
+/* Tabla*/
+.contenedor-tabla{
+    width: 1200px;
+    height: auto;;
+    margin: 0 auto;
+
+}
+
+.contenedor-tabla h1{
+    color: white;
+    font-family: Righteous;
+}
+
+.table-responsive {
+    margin: 30px 0;
+}
+.table-wrapper {
+    min-width: 1000px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.table-title {
+    padding-bottom: 10px;
+    margin: 0 0 10px;
+    min-width: 100%;
+}
+.table-title h2 {
+    margin: 8px 0 0;
+    font-size: 22px;
+}
+
+table.table tr th, table.table tr td {
+    border-color: #e9e9e9;
+}
+table.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fcfcfc;
+}
+table.table-striped.table-hover tbody tr:hover {
+    background: #f5f5f5;
+}
+table.table th i {
+    font-size: 13px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+table.table td:last-child {
+    width: 130px;
+}
+table.table td a {
+    color: #a0a5b1;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+table.table td a.view {
+    color: #03A9F4;
+}
+table.table td a.edit {
+    color: #FFC107;
+}
+table.table td a.delete {
+    color: #E34724;
+}
+
+table.table td i {
+    font-size: 19px;
+}    
+
+.fa{
+color: red;
+font-size: 20px;
+}
+
+.imagenAcomodo{
+    width: 80px;
+    height: 90px;
+}
+
+/*EFECTO MULTI COLOR*/
+@keyframes botonAnim {
+    0%{
+        background-color: #064904;
+    }
+    50%{
+        background-color: #E21831;
+    }
+    100%{
+        background-color: #420070;
+    }
+}
+
+.totalApagar{
+    grid-column: 1 / span 4;
+    width: 1150px;
+    background-color: #E34724;
+    margin: 0 auto;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.finalizo-compra{
+    width: 400px;
+}
+
+.conten-dos{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+}
+
+.total{
+    display: flex;
+    width: 400px;
+}
+
+.alerta{
+    width: 100%;
+    height: auto;
+    background-color: coral;
+}
+
+.totalApagar h1{
+    margin-top: 20px;
+    font-family: Righteous;
+    color: white;
+}
+
+.mostrarDatos h1{
+    color: black;
+    text-align: center;
+    font-family: Righteous;
+}
+
+.total h3{
+    margin-top: 30px;
+    color: white;
+}
+
+.mostrarDatos p{
+    font-family: Acme;
+    font-size: 18px;
+}
+
+.total p{
+    font-family: Acme;
+    margin-left: 15px;
+    font-size: 25px;
+    margin-top: 30px;
+    color: white;
+}
+
+/*TABLA DE COMPRAS*/
+.table-wrapper {
+    width: 700px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;	
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.table-title {
+    padding-bottom: 10px;
+    margin: 0 0 10px;
+}
+.table-title h2 {
+    margin: 6px 0 0;
+    font-size: 22px;
+}
+.table-title .add-new {
+    float: right;
+    height: 30px;
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: none;
+    min-width: 100px;
+    border-radius: 50px;
+    line-height: 13px;
+}
+.table-title .add-new i {
+    margin-right: 4px;
+}
+table.table {
+    table-layout: fixed;
+}
+table.table tr th, table.table tr td {
+    border-color: #e9e9e9;
+}
+table.table th i {
+    font-size: 13px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+table.table th:last-child {
+    width: 100px;
+}
+table.table td a {
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 5px;
+    min-width: 24px;
+}    
+table.table td a.add {
+    color: #27C46B;
+}
+table.table td a.edit {
+    color: #FFC107;
+}
+table.table td a.delete {
+    color: #E34724;
+}
+table.table td i {
+    font-size: 19px;
+}
+table.table td a.add i {
+    font-size: 24px;
+    margin-right: -1px;
+    position: relative;
+    top: 3px;
+}    
+table.table .form-control {
+    height: 32px;
+    line-height: 32px;
+    box-shadow: none;
+    border-radius: 2px;
+}
+table.table .form-control.error {
+    border-color: #f50000;
+}
+table.table td .add {
+    display: none;
+}
+
+/* ACA COMIENZA FOOTER (FOOTER)*/
+.footer{
+    background-color: #9CA741;
+    grid-column: 1 / span 4;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*IMAGEN DEL FOOTER (FOOTER)*/
+.footer img{
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+}
+/*PARRAFO DEL FOOTER (FOOTER)*/
+.footer p{
+    font-family: 'miFuente';
+    font-size: 15px;
+    margin-top: 40px;
+    color: white;
+}

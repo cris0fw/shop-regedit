@@ -1,0 +1,268 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+/* ACA EMPIEZA EL CONTENEDOR PRINCIPAL */
+.contenedor-principal{
+    width: 100%;
+    margin: auto;
+    background-color: #1E1B16;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@keyframes cambiar{
+    0% {
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+
+
+}
+
+/* ACA EMPIEZA EL HEADER  */
+.cabecera{
+    background-color: #9CA741;
+    grid-column: 1 / span 4;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* EL TITULO FULL REGEDIT (HEADER) */
+.cabecera img{
+    width: 250px;
+    height: auto;
+}
+/* ICONO DEL CARRITO (HEADER) */
+.cabecera div img{
+    width: 85px;
+    height: 65px;
+    animation: bounce; 
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+/* LETRA DE SHOP REGEDIT (HEADER) */
+.cabecera div h1{
+    font-family: 'miFuente';
+    font-size: 50px;
+    margin-left: 7px;
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
+@font-face{
+    font-family: 'miFuente';
+    src: url("letras/fuente1.ttf");
+}
+/* CONTENEDOR DE CABECERA SHOP (HEADER)*/
+.cabecera-shop{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* ACA EMPIEZA EL MENU  */
+.menu{
+    background-color: #867A60;
+    grid-column: 1 / span 4;
+
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+/* PROPIEDADES DE MENU (MENU)  */
+.menu a{
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    flex-grow: 1;
+    font-family: Acme;
+}
+
+.menu a:hover{
+    background-color: white;
+    color: #1E1B16;
+}
+
+.contenedor-fomulario{
+    margin-top: 70px;
+}
+
+/* CONTENIDO PRINCIPAL FONDO(FORMULARIO)*/
+.registrando{
+    grid-column: 1/ span 4;
+
+    background-image: url("https://images.hive.blog/DQmfRNH2DLVqzBnp9crbuS6jC2NpVfT7fTiYamNANZSKEj2/teclear-adecuadamente.gif");
+    background-repeat: no-repeat;
+    background-size: 117%;
+    min-height: 100vh;
+   
+}
+
+input[type='submit']{
+    width: 100%;
+    background-color: #2780E3;
+    border: none;
+    padding:12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/*CONTENEDOR DE UNA IMAGEN (SECCION)*/
+.publicidad{
+    grid-column: 1/ span 4;
+
+    background-color: #1E1B16;
+}
+
+.colorRojo{
+    color: red;
+}
+
+.contenedor-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+
+/* ACA COMIENZA FOOTER (FOOTER)*/
+.footer{
+    background-color: #9CA741;
+    grid-column: 1 / span 4;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*IMAGEN DEL FOOTER (FOOTER)*/
+.footer img{
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+}
+/*PARRAFO DEL FOOTER (FOOTER)*/
+.footer p{
+    font-family: 'miFuente';
+    font-size: 15px;
+    margin-top: 40px;
+    color: white;
+}
+
+.form-control {
+	height: 40px;
+	box-shadow: none;
+	color: #969fa4;
+}
+.form-control:focus {
+	border-color: #5cb85c;
+}
+.form-control, .btn {        
+	border-radius: 3px;
+}
+.signup-form {
+	width: 450px;
+	margin: 0 auto;
+	padding: 30px 0;
+  	font-size: 15px;
+}
+.signup-form h2 {
+	color: #636363;
+	margin: 0 0 15px;
+	position: relative;
+	text-align: center;
+}
+.signup-form h2:before, .signup-form h2:after {
+	content: "";
+	height: 2px;
+	width: 30%;
+	background: #d4d4d4;
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+}	
+.signup-form h2:before {
+	left: 0;
+}
+.signup-form h2:after {
+	right: 0;
+}
+.signup-form .hint-text {
+	color: #999;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.signup-form form { /* CAMBIAR COLOR EL FORMULARIO */
+	color: #999;
+	border-radius: 3px;
+	margin-bottom: 15px;
+	background: #f2f3f7;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+	padding: 30px;
+}
+.signup-form .form-group {
+	margin-bottom: 20px;
+}
+.signup-form input[type="checkbox"] {
+	margin-top: 3px;
+}
+.signup-form .btn {  /* CAMBIAR COLOR EL BOTON */      
+	font-size: 16px;
+	font-weight: bold;		
+	min-width: 140px;
+	outline: none !important;
+    background-color: #3F3D56;
+    color: white;
+}
+.signup-form .btn:hover {  /* CAMBIAR COLOR EL BOTON */      
+	color: #3F3D56;
+    border:2px solid #3F3D56;
+    background-color: white;
+}
+
+.signup-form .row div:first-child {
+	padding-right: 10px;
+}
+.signup-form .row div:last-child {
+	padding-left: 10px;
+}    	
+.signup-form a {
+	color: #fff;
+	text-decoration: underline;
+}
+.signup-form a:hover {
+	text-decoration: none;
+
+}
+.signup-form form a {
+	color: #5cb85c;
+	text-decoration: none;
+}	
+.signup-form form a:hover {
+	text-decoration: underline;
+}  

@@ -1,0 +1,517 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* ACA EMPIEZA EL CONTENEDOR PRINCIPAL */
+.contenedor-principal{
+    width: 100%;
+    margin: auto;
+    background-color: #1E1B16;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+   
+
+/* ACA EMPIEZA EL HEADER  */
+.cabecera{
+    background-color: #9CA741;
+    grid-column: 1 / span 4;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* EL TITULO FULL REGEDIT (HEADER) */
+.cabecera img{
+    width: 250px;
+    height: auto;
+}
+/* ICONO DEL CARRITO (HEADER) */
+.cabecera div img{
+    width: 85px;
+    height: 65px;
+    animation: bounce; 
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/* LETRA DE SHOP REGEDIT (HEADER) */
+.cabecera div h1{
+    font-family: 'miFuente';
+    font-size: 50px;
+    margin-left: 7px;
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
+
+@font-face{
+    font-family: 'miFuente';
+    src: url("letras/letra1.ttf");
+}
+/* CONTENEDOR BOTONES (HEADER) */
+.contenedor-botones{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+/* BOTON1 Y BOTON2 (HEADER) */
+.contenedor-botones a{
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 20%;
+    text-align: center;
+    margin-right: 6px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family:'Arimo', sans-serif ;
+}
+
+/*EFECTO BOTON 1 Y BOTON 2 (HEADER) */
+.contenedor-principal a:hover{
+    background-color: white;
+    color: black;
+    transition-timing-function:ease-out;
+    transition-duration: 0.80s;
+}
+
+/* CONTENEDOR DE CABECERA SHOP (HEADER)*/
+.cabecera-shop{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+}
+
+/* ACA EMPIEZA EL MENU  */
+.menu{
+    background-color: #867A60;
+    grid-column: 1 / span 4;
+
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+/* PROPIEDADES DE MENU (MENU)  */
+.menu a{
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    flex-grow: 1;
+    font-family: Acme;
+    font-size: 17px;
+}
+
+/* ACA EMPIEZA EL SLIDER */
+.slider{
+    grid-column: 1/ span 4;
+}
+
+.contenedor-slider{
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.nopierdas{
+    font-size: 22px;
+    color: white;
+}
+
+.nolopierdas{
+    font-size: 22px;
+    color: white;
+}
+
+
+/* ACA EMPIEZA EL MAIN CONTENIDO PRINCIPAL */
+.informacion{
+    background-color: #1E1B16;
+    grid-column: 1/ span 2;
+    padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+}
+
+/* ARTITULO1 DE MAIN (MAIN)*/
+.informacion1{
+    background-color: #A78142;
+    padding: 5px;
+    width: 700px;
+    height: 250px;
+}
+
+/* ARTITULO2 DE MAIN  (MAIN)*/
+.informacion2{
+    background-color: #A78142;
+    padding: 5px;
+    width: 700px;
+    height: 250px;
+}
+
+/* ARTITULO3 DE MAIN (MAIN)*/
+.informacion3{
+    background-color: #A78142;
+    padding: 5px;
+    width: 700px;
+    height: 250px;
+}
+
+/* H2 DE ARTICULO1 (MAIN)*/
+.titulo1{
+    text-align: center;
+    font-weight:bold;
+    margin: 0;
+    padding: 3;
+    background-color: #1E1B16;
+    color: White;
+}
+
+/* H2 DE ARTICULO2  (MAIN)*/
+.titulo2{
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    padding: 3;
+    background-color: #1E1B16;
+    color: white;
+}
+
+/* H2 DE ARTICULO3 (MAIN)*/
+.titulo3{
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    padding: 3;
+    background-color: #1E1B16;
+    color: white;
+}
+
+/* PARRAFO DE ARTICULO1 (MAIN)*/
+.informacion1 p{
+    text-align: start;
+    color:snow;
+    font-size: 1.2rem;
+    padding: 8px;
+    font-family: Acme;
+}
+
+/* PARRAFO DE ARTICULO3 (MAIN)*/
+.informacion2 p{
+    text-align: start;
+    color:snow;
+    font-size: 1.2rem;
+    padding: 8px;
+    font-family: Acme;
+}
+
+/* PARRAFO DE ARTICULO3 (MAIN)*/
+.informacion3 p{
+    text-align: start;
+    color:snow;
+    font-size: 18px;
+    padding: 8px;
+    font-family: Acme;
+    font-size: 1.2rem;
+}
+
+/* ACA EMPIEZA EL ASIDE PRINCIPAL */
+.publicidad{
+    background-color: #1E1B16;
+    grid-column: 3 / span 2;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    border-left: 1px solid grey;
+}
+
+/* IMAGENES DEL ASIDE 1 (ASIDE)*/
+.imagen1 img{
+    width: 600px;
+    height: 200px;
+    cursor: pointer;
+}
+/* ANIMACION DE IMAGEN 1 (ASIDE) */
+.imagen1 img:hover{
+    animation: pulse; 
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+/* IMAGENES DEL (ASIDE) 2 */
+.imagen2 img{
+    width: 600px;
+    height: 200px;
+    cursor: pointer;
+}
+/* ANIMACION DE IMAGEN 2 (ASIDE) */
+.imagen2 img:hover{
+    animation: pulse; 
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+/* IMAGENES DEL ASIDE 3 (ASIDE)*/
+.imagen3 img{
+    width: 600px;
+    height: 200px;
+    cursor: pointer;
+}
+/* ANIMACION DE IMAGEN 3 (ASIDE) */
+.imagen3 img:hover{
+    animation: pulse; 
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+/* IMAGENES DEL ASIDE 4 (ASIDE)*/
+.imagen4 img{
+    width: 600px;
+    height: 200px;
+    cursor: pointer;
+}
+/* ANIMACION DE IMAGEN 4 (ASIDE) */
+.imagen4 img:hover{
+    animation: pulse; 
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+/* H1 DEL ASIDE (ASIDE)*/
+.publicidad h1{
+  background-color: #A78142;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 96%;
+  color: white;
+  font-family: Righteous;
+}
+/*ANIMACION DEL H1  (ASIDE)*/
+.publicidad h1:hover{
+    color:dodgerblue;
+}
+
+/* PARRAFO 1 DE ASIDE (ASIDE)*/
+.imagen1 p{
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+/* PARRAFO 2 DE ASIDE (ASIDE)*/
+.imagen2 p{
+    width: 600px;
+    height: 70px;
+    padding: 5px;
+    text-align: center;
+    margin: 5px auto;
+    color: white;
+}
+/* PARRAFO 3 DE ASIDE (ASIDE)*/
+.imagen3 p{
+    width: 600px;
+    height: 70px;
+    padding: 5px;
+    text-align: center;
+    margin: 5px auto;
+    color: white;
+}
+/* PARRAFO 4 DE ASIDE (ASIDE)*/
+.imagen4 p{
+    width: 600px;
+    height: 80px;
+    padding: 5px;
+    text-align: center;
+    margin: 4px auto;
+    color: white;
+}
+/* ACA COMIENZA LA SECCION 1 (SECCION 1)*/
+.articulo1{
+    padding-top: 10px;
+    padding-bottom: 40px;
+    background-color: #867A60;
+}
+/* SECCION 1(SECCION 1)*/
+.seccion1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+/* BOTON DE LA SECCION 1 (SECCION 1)*/
+.link1{
+    width: 150px;
+    height: 35px;
+    background-color: #A78142;
+    text-decoration: none;
+    text-align:center;
+    padding-top: 10px;
+    border-radius: 10%;
+    color: white;
+}
+/* ACA COMIENZA LA SECCION 2 (SECCION 2)*/
+.article{
+    grid-column: 1 / span 4;
+}
+
+.tituloArticulo {
+    color: rgba(255, 255, 255, 0.9);
+    font: normal 100px Varela Round, sans-serif;
+   
+    text-align: center;
+    text-transform: uppercase;
+   
+    animation: move linear 2000ms infinite;  
+  }
+  
+  @keyframes move {
+    0% {
+      text-shadow:
+        4px -4px 0 hsla(0, 100%, 50%, 1), 
+        3px -3px 0 hsla(0, 100%, 50%, 1), 
+        2px -2px 0 hsla(0, 100%, 50%, 1), 
+        1px -1px 0 hsla(0, 100%, 50%, 1),
+        -4px 4px 0 hsla(180, 100%, 50%, 1), 
+        -3px 3px 0 hsla(180, 100%, 50%, 1), 
+        -2px 2px 0 hsla(180, 100%, 50%, 1), 
+        -1px 1px 0 hsla(180, 100%, 50%, 1)
+      ;
+    }
+    25% {    
+      text-shadow:      
+        -4px -4px 0 hsla(180, 100%, 50%, 1), 
+        -3px -3px 0 hsla(180, 100%, 50%, 1), 
+        -2px -2px 0 hsla(180, 100%, 50%, 1), 
+        -1px -1px 0 hsla(180, 100%, 50%, 1),
+        4px 4px 0 hsla(0, 100%, 50%, 1), 
+        3px 3px 0 hsla(0, 100%, 50%, 1), 
+        2px 2px 0 hsla(0, 100%, 50%, 1), 
+        1px 1px 0 hsla(0, 100%, 50%, 1)      
+      ;
+    }
+    50% {
+      text-shadow:
+        -4px 4px 0 hsla(0, 100%, 50%, 1), 
+        -3px 3px 0 hsla(0, 100%, 50%, 1), 
+        -2px 2px 0 hsla(0, 100%, 50%, 1), 
+        -1px 1px 0 hsla(0, 100%, 50%, 1),
+        4px -4px 0 hsla(180, 100%, 50%, 1), 
+        3px -3px 0 hsla(180, 100%, 50%, 1), 
+        2px -2px 0 hsla(180, 100%, 50%, 1), 
+        1px -1px 0 hsla(180, 100%, 50%, 1)
+      ;
+    }
+    75% {
+      text-shadow:
+        4px 4px 0 hsla(180, 100%, 50%, 1), 
+        3px 3px 0 hsla(180, 100%, 50%, 1), 
+        2px 2px 0 hsla(180, 100%, 50%, 1), 
+        1px 1px 0 hsla(180, 100%, 50%, 1),
+        -4px -4px 0 hsla(0, 100%, 50%, 1), 
+        -3px -3px 0 hsla(0, 100%, 50%, 1), 
+        -2px -2px 0 hsla(0, 100%, 50%, 1), 
+        -1px -1px 0 hsla(0, 100%, 50%, 1)      
+      ;
+    }
+    100% {
+      text-shadow:
+        4px -4px 0 hsla(0, 100%, 50%, 1), 
+        3px -3px 0 hsla(0, 100%, 50%, 1), 
+        2px -2px 0 hsla(0, 100%, 50%, 1), 
+        1px -1px 0 hsla(0, 100%, 50%, 1),
+        -4px 4px 0 hsla(180, 100%, 50%, 1), 
+        -3px 3px 0 hsla(180, 100%, 50%, 1), 
+        -2px 2px 0 hsla(180, 100%, 50%, 1), 
+        -1px 1px 0 hsla(180, 100%, 50%, 1)
+      ;
+    }  
+  }
+
+.haciendoFlex{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.contenedor-padre-a{
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: start;
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.parrafoHover{
+    height: 25px;
+    overflow: hidden;
+    transition: height .3s ease-in .3s;
+}
+
+.parrafoHover:hover{
+    height: 80px;
+}
+
+/* ACA COMIENZA COMENTARIOS (COMENTARIOS)*/
+.comentar{
+    grid-column: 1/ span 4;
+    background-color:#774323;
+}
+
+.contenedor-coment{
+    width: 770px;
+    background-color: #774323;
+    margin-left: 400px;
+}
+
+
+/* ACA COMIENZA FOOTER (FOOTER)*/
+.footer{
+    background-color: #9CA741;
+    grid-column: 1 / span 4;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*IMAGEN DEL FOOTER (FOOTER)*/
+.footer img{
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+}
+/*PARRAFO DEL FOOTER (FOOTER)*/
+.footer p{
+    font-family: 'miFuente';
+    font-size: 15px;
+    margin-top: 40px;
+    color: white;
+}

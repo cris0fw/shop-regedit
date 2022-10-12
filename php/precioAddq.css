@@ -1,0 +1,377 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* ACA EMPIEZA EL CONTENEDOR PRINCIPAL */
+.contenedor-principal{
+    width: 100%;
+    margin: auto;
+    background-color: #1E1B16;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@keyframes cambiar{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+/* ACA EMPIEZA EL HEADER  */
+.cabecera{
+    background-color: #9CA741;
+    grid-column: 1 / span 4;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* EL TITULO FULL REGEDIT (HEADER) */
+.cabecera img{
+    width: 250px;
+    height: auto;
+}
+
+/* ICONO DEL CARRITO (HEADER) */
+.cabecera div img{
+    width: 85px;
+    height: 65px;
+    animation: bounce; 
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/* LETRA DE SHOP REGEDIT (HEADER) */
+.cabecera div h1{
+    font-family: 'miFuente';
+    font-size: 50px;
+    margin-left: 7px;
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
+
+@font-face{
+    font-family: 'miFuente';
+    src: url("letras/fuente1.ttf");
+}
+
+/* CONTENEDOR BOTONES (HEADER) */
+.contenedor-botones{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 3px;
+    margin-right: 10px;
+}
+
+/* BOTON1 Y BOTON2 (HEADER) */
+.contenedor-botones a{
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 20%;
+    text-align: center;
+    margin-right: 6px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family:'Arimo', sans-serif ;
+}
+
+/* PARRAFO DEL USUARIO (HEADER) */
+.contenedor-botones .usuario{
+    color: white;
+    font-size: 19px;
+   padding-right: 16px;
+}
+
+/*EFECTO BOTON 1 Y BOTON 2 (HEADER) */
+.contenedor-principal a:hover{
+    background-color: white;
+    color: black;
+    transition-timing-function:ease-out;
+    transition-duration: 0.80s;
+}
+
+/* CONTENEDOR DE CABECERA SHOP (HEADER)*/
+.cabecera-shop{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+}
+
+/* ACA EMPIEZA EL MENU  */
+.menu{
+    background-color: #867A60;
+    grid-column: 1 / span 4;
+
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+/* PROPIEDADES DE MENU (MENU)  */
+.menu a{
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    flex-grow: 1;
+    font-family: Acme;
+}
+
+.flexfiltroproductos{
+    display: flex;
+    
+    justify-content: space-evenly;
+    
+}
+
+/* ACA COMIENZA LAS BUSQUEDAS (BUSQUEDAS)*/
+.busquedas{
+    grid-column: 1/ span 4;
+    background-color: #9CA741;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+.fa-user-o,
+.fa-shopping-cart {
+    font-size: 20px;
+    padding: 4px
+}
+
+.fa{
+    font-size: 30px !important;
+}
+
+.nav-link{
+    color: black;
+    background-color: white;
+}
+
+.text{
+    font-size: 18px;
+    font-family: Acme;
+}
+
+.buscar{
+    padding: 8px;
+    width: 300px;
+    outline: none;
+    font-size: 16px;
+}
+
+.boton-buscar{
+    padding: 8px;
+    width: 100px;
+    background-color: yellow;
+    color: white;
+    font-size: 16px;
+    animation-name: botonAnim;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/* ACA EMPIEZA EL FILTRO*/
+.container{
+    width: 300px;
+    height: 500px;
+    margin-top: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-filtro{
+    width: 50%;
+    height: 9%;
+}
+
+.container h1{
+    font-size: 40px;
+    font-family: Righteous;
+    text-align: center;
+}
+
+/*EFECTO MULTI COLOR*/
+@keyframes botonAnim {
+    0%{
+        background-color: #064904;
+    }
+    50%{
+        background-color: #E21831;
+    }
+    100%{
+        background-color: #420070;
+    }
+}
+
+/*EL CONTENEDOR DE LOS PRODUCTOS DIV(CONTENEDOR-PRODUCTOS)*/
+.grid-product{
+    width: 900px;
+    height: auto;
+    margin-top: 50px;
+    margin-right: 50px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* ACA COMIENZA MIS PRODUCTOS(PRODUCTOS)*/
+.productos{
+    grid-column: 1 / span 4;
+}
+
+/*IMAGENES DE PRODUCTOS (PRODUCTOS)*/
+img {
+    object-fit: contain;
+    width: 170px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+p.h4 {
+    font-family: 'Roboto Slab', serif
+}
+
+.rating {
+    font-size: 0.7rem
+}
+
+.fa-star,
+.reviews {
+    color: #daa520
+}
+
+div.h4 {
+    font-size: 1.8rem;
+    color: #d4a838;
+    font-family: 'Lora', serif;
+    margin: 0
+}
+
+.btn {
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 8px 20px
+}
+
+.card {
+    position: relative
+}
+
+.card:hover {
+    border: 1px solid #000;
+    box-shadow: 3px 3px 30px rgb(166, 255, 144)
+}
+
+.red {
+    background-color: #e03e3e;
+    position: absolute;
+    color: #fff;
+    border-radius: 5px;
+    right: 5px;
+    top: 5px;
+    font-size: 0.9rem
+}
+
+.obtener{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faa{
+    font-size: 20px !important;
+}
+
+.parrafo{
+    font-size: 17px;
+    color:black;
+}
+
+.sensi{
+    color: black;
+    font-size: 13px;
+}
+
+.descrip{
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.imgRegedits{
+    width:160px; 
+    height:200px; 
+    border:0px; 
+    background-size: 100% 100%;
+    font-size: 0; 
+    line-height: 0
+}
+
+
+@keyframes fondo {
+    0%{
+        background-color: #064904;
+    }
+    50%{
+        background-color: #E21831;
+    }
+    100%{
+        background-color: #420070;
+    }
+}
+
+
+/* ACA COMIENZA FOOTER (FOOTER)*/
+.footer{
+    background-color: #9CA741;
+    grid-column: 1 / span 4;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*IMAGEN DEL FOOTER (FOOTER)*/
+.footer img{
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+}
+/*PARRAFO DEL FOOTER (FOOTER)*/
+.footer p{
+    font-family: 'miFuente';
+    font-size: 15px;
+    margin-top: 40px;
+    color: white;
+}

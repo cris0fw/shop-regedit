@@ -1,0 +1,528 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* ACA EMPIEZA EL CONTENEDOR PRINCIPAL */
+.contenedor-principal{
+    width: 100%;
+    margin: auto;
+    background-color: #1E1B16;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* ACA EMPIEZA EL HEADER  */
+.cabecera{
+    background-color: #9CA741;
+    grid-column: 1 / span 4;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* EL TITULO FULL REGEDIT (HEADER) */
+.cabecera img{
+    width: 250px;
+    height: auto;
+}
+/* ICONO DEL CARRITO (HEADER) */
+.cabecera div img{
+    width: 85px;
+    height: 65px;
+    animation: bounce; 
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/* LETRA DE SHOP REGEDIT (HEADER) */
+.cabecera div h1{
+    font-family: 'miFuente';
+    font-size: 50px;
+    margin-left: 7px;
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
+
+@font-face{
+    font-family: 'miFuente';
+    src: url("letra1.ttf");
+}
+/* CONTENEDOR BOTONES (HEADER) */
+.contenedor-botones{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+/* BOTON1 Y BOTON2 (HEADER) */
+.contenedor-botones a{
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 20%;
+    text-align: center;
+    margin-right: 6px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family:'Arimo', sans-serif ;
+}
+
+/*EFECTO BOTON 1 Y BOTON 2 (HEADER) */
+.contenedor-principal a:hover{
+    background-color: white;
+    color: black;
+    transition-timing-function:ease-out;
+    transition-duration: 0.80s;
+}
+
+/* CONTENEDOR DE CABECERA SHOP (HEADER)*/
+.cabecera-shop{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+}
+
+/* ACA EMPIEZA EL MENU  */
+.menu{
+    background-color: #867A60;
+    grid-column: 1 / span 4;
+
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+/* PROPIEDADES DE MENU (MENU)  */
+.menu a{
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    flex-grow: 1;
+    font-family: Acme;
+}
+
+/* ACA EMPIEZA EL MAIN CONTENIDO PRINCIPAL */
+.informacion{
+    background-color: #1E1B16;
+    grid-column: 1/ span 4;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+/* ACA COMIENZA EL MAIN*/
+.main-general{
+    display: grid;
+    grid-column: 1/ span 4;
+    background-color: #1E1B16;
+}
+/* ACA COMIENZA EL CONTENEDOR PADRE DE INFORMACION INSTALAR Y CATEGORIAS*/
+.info-general{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* ACA COMIENZA LA INFORMACION DE INSTALAR*/
+.informacion-instalar{
+    color: white;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 45%;
+    height: auto;
+    padding: 15px;
+}
+
+/* TITULO ¿COMO INSTALAR?*/
+.informacion-instalar h1{
+    text-align: center;
+    font-family: Righteous;
+}
+
+/*CONTENEDOR IMAGEN, PARRAFO Y TITULO*/
+.contenedor-uno{
+    background: #A78142;
+    padding: 6px;
+}
+
+/*TITULO*/
+.contenedor-uno h2{
+    background-color: #1E1B16;
+    padding: 7px;
+    font-family: Righteous;
+    text-align: center;
+}
+
+/*PARRAFO*/
+.contenedor-uno p{
+    font-family: Acme;
+    font-size: 18px;
+}
+
+/*CONTENEDOR IMAGEN 1*/
+.contenedor-imagen1{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/*IMAGEN 1*/
+.contenedor-imagen1 img{
+    border-radius: 5px;
+    width: 600px;
+    height: 300px;
+}
+
+/*CONTENEDOR 2 IMAGEN, PARRAFO Y TITULO*/
+.contenedor-dos{
+    background: #A78142;
+    padding: 6px;
+    margin-top: 15px;
+}
+
+/*TITULO*/
+.contenedor-dos h2{
+    background-color: #1E1B16;
+    padding: 7px;
+    font-family: Righteous;
+    text-align: center;
+}
+
+/*PARRAFO*/
+.contenedor-dos p{
+    font-family: Acme;
+    font-size: 18px;
+}
+
+/*CONTENEDOR IMAGEN 2*/
+.contenedor-imagen2{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/*IMAGEN 2*/
+.contenedor-imagen2 img{
+    border-radius: 5px;
+    width: 600px;
+    height: 300px;
+}
+
+/*CONTENEDOR 3 IMAGEN, PARRAFO Y TITULO*/
+.contenedor-tres{
+    background: #A78142;
+    padding: 6px;
+    margin-top: 15px;
+}
+
+/*PARRAFO*/
+.contenedor-tres p{
+    font-family: Acme;
+    font-size: 18px;
+}
+
+/*CONTENEDOR IMAGEN 3*/
+.contenedor-imagen3{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/*IMAGEN 3*/
+.contenedor-imagen3 img{
+    border-radius: 5px;
+    width: 600px;
+    height: 300px;
+}
+
+/*CONTENEDOR 4 IMAGEN, PARRAFO Y TITULO*/
+.contenedor-cuatro{
+    background: #A78142;
+    padding: 6px;
+    margin-top: 15px;
+}
+
+/*PARRAFO*/
+.contenedor-cuatro p{
+    font-family: Acme;
+    font-size: 18px;
+}
+
+/*CONTENEDOR IMAGEN 4*/
+.contenedor-imagen4{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/*IMAGEN 4*/
+.contenedor-imagen4 img{
+    border-radius: 5px;
+    width: 600px;
+    height: 300px;
+}
+
+/*CONTENEDOR 5 IMAGEN, PARRAFO Y TITULO*/
+.contenedor-quinto{
+    background: #A78142;
+    padding: 6px;
+    margin-top: 15px;
+}
+
+/*TITULO*/
+.contenedor-quinto h2{
+    background-color: #1E1B16;
+    padding: 7px;
+    font-family: Righteous;
+    text-align: center;
+}
+
+/*PARRAFO*/
+.contenedor-quinto p{
+    font-family: Acme;
+    font-size: 18px;
+}
+
+/*CONTENEDOR 6 IMAGEN, PARRAFO Y TITULO*/
+.contenedor-sexto{
+    background: #A78142;
+    padding: 6px;
+    margin-top: 15px;
+}
+
+/*TITULO*/
+.contenedor-sexto h2{
+    background-color: #1E1B16;
+    padding: 7px;
+    font-family: Righteous;
+    text-align: center;
+}
+
+/*PARRAFO*/
+.contenedor-sexto p{
+    font-family: Acme;
+    font-size: 18px;
+}
+
+/*CONTENEDOR IMAGEN 5*/
+.contenedor-imagen5{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/*IMAGEN 5*/
+.contenedor-imagen5 img{
+    border-radius: 5px;
+    width: 600px;
+    height: 300px;
+}
+/*CONTENEDOR 7 IMAGEN, PARRAFO Y TITULO*/
+.contenedor-septimo{
+    background: #A78142;
+    padding: 6px;
+    margin-top: 15px;
+}
+
+/*TITULO*/
+.contenedor-septimo h2{
+    background-color: #1E1B16;
+    padding: 7px;
+    font-family: Righteous;
+    text-align: center;
+}
+
+/*PARRAFO*/
+.contenedor-septimo p{
+    font-family: Acme;
+    font-size: 18px;
+}
+
+/*CONTENEDOR IMAGEN 6*/
+.contenedor-imagen6{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/*IMAGEN 6*/
+.contenedor-imagen6 img{
+    border-radius: 5px;
+    width: 600px;
+    height: 300px;
+}
+
+/*CONTENEDOR 8 IMAGEN, PARRAFO Y TITULO*/
+.contenedor-octavo{
+    background: #A78142;
+    padding: 6px;
+    margin-top: 15px;
+}
+
+/*TITULO*/
+.contenedor-octavo h2{
+    background-color: #1E1B16;
+    padding: 7px;
+    font-family: Righteous;
+    text-align: center;
+}
+
+/*PARRAFO*/
+.contenedor-octavo p{
+    font-family: Acme;
+    font-size: 18px;
+}
+
+/*CONTENEDOR IMAGEN 7*/
+.contenedor-imagen7{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/*IMAGEN 7*/
+.contenedor-imagen7 img{
+    border-radius: 5px;
+    width: 600px;
+    height: 300px;
+}
+
+/*CONTENEDOR 9 IMAGEN, PARRAFO Y TITULO*/
+.contenedor-noveno{
+    background: #A78142;
+    padding: 6px;
+    margin-top: 15px;
+}
+
+/*TITULO*/
+.contenedor-noveno h2{
+    background-color: #1E1B16;
+    padding: 7px;
+    font-family: Righteous;
+    text-align: center;
+}
+
+/*PARRAFO*/
+.contenedor-noveno p{
+    font-family: Acme;
+    font-size: 18px;
+}
+
+/*CONTENEDOR 8 IMAGEN, PARRAFO Y TITULO*/
+.contenedor-decimo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+
+/* ACA COMIENZA LAS CATEGORIAS*/
+.categorias{
+    color: white;
+    margin-right: 60px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background: #A78142;
+    width: 45%;
+}
+
+.categorias h1{
+    font-family: Righteous;
+    font-size: 36px;
+    text-align: center;
+}
+
+.list-group{
+    width: 600px;
+}
+
+/* ACA COMIENZA COMENTARIOS (COMENTARIOS)*/
+.comentar{
+    grid-column: 1/ span 4;
+    background-color:#774323;
+}
+
+.contenedor-coment{
+    width: 770px;
+    background-color: #774323;
+    margin-left: 400px;
+}
+
+
+/* ACA COMIENZA FOOTER (FOOTER)*/
+.footer{
+    background-color: #9CA741;
+    grid-column: 1 / span 4;
+}
+
+/* ACA COMIENZA FOOTER (FOOTER)*/
+.footer{
+    background-color: #9CA741;
+    grid-column: 1 / span 4;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/*IMAGEN DEL FOOTER (FOOTER)*/
+.footer img{
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+/*PARRAFO DEL FOOTER (FOOTER)*/
+.footer p{
+    font-family: 'miFuente';
+    font-size: 15px;
+    margin-top: 40px;
+    color: white;
+}

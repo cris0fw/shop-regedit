@@ -1,0 +1,365 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* ACA EMPIEZA EL CONTENEDOR PRINCIPAL */
+.contenedor-principal{
+    width: 100%;
+    margin: auto;
+    background-color: #1E1B16;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* ACA EMPIEZA EL HEADER  */
+.cabecera{
+    background-color: #9CA741;
+    grid-column: 1 / span 4;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* EL TITULO FULL REGEDIT (HEADER) */
+.cabecera img{
+    width: 250px;
+    height: auto;
+}
+/* ICONO DEL CARRITO (HEADER) */
+.cabecera div img{
+    width: 85px;
+    height: 65px;
+    animation: bounce; 
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/* LETRA DE SHOP REGEDIT (HEADER) */
+.cabecera div h1{
+    font-family: 'miFuente';
+    font-size: 50px;
+    margin-left: 7px;
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
+
+@font-face{
+    font-family: 'miFuente';
+    src: url("letra1.ttf");
+}
+/* CONTENEDOR BOTONES (HEADER) */
+.contenedor-botones{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+/* BOTON1 Y BOTON2 (HEADER) */
+.contenedor-botones a{
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 20%;
+    text-align: center;
+    margin-right: 6px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family:'Arimo', sans-serif ;
+}
+
+/*EFECTO BOTON 1 Y BOTON 2 (HEADER) */
+.contenedor-principal a:hover{
+    background-color: white;
+    color: black;
+    transition-timing-function:ease-out;
+    transition-duration: 0.80s;
+}
+
+/* CONTENEDOR DE CABECERA SHOP (HEADER)*/
+.cabecera-shop{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+}
+
+/* ACA EMPIEZA EL MENU  */
+.menu{
+    background-color: #867A60;
+    grid-column: 1 / span 4;
+
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+/* PROPIEDADES DE MENU (MENU)  */
+.menu a{
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    flex-grow: 1;
+    font-family: Acme;
+}
+/* PAGINA PRINCIPAL DE CONTACTOS (CONTACTOS)  */
+.slider-contactos{
+    grid-column: 1 / span 4;
+    background-color: #1E1B16;
+}
+
+.contenedor-slider{
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.contatanos{
+    grid-column: 1 / span 4;
+   
+}
+
+.wrapper {
+    height: 100vh;
+    background: #000;
+    background: url("https://c.tenor.com/d6c5zdDp4V4AAAAC/city-lights-cool.gif");
+    background-size: cover;
+    width: 100%
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6)
+}
+
+.contact-us {
+    margin-top: 50px;
+    margin-bottom: 50px
+}
+
+.contact-us h3,
+p {
+    color: #fff
+}
+
+.address {
+    margin-top: 14px !important;
+    margin-left: 10px
+}
+
+.address span {
+    color: #d8580f
+}
+
+.icons {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.icons i {
+    font-size: 20px
+}
+
+.forms {
+    padding: 20px
+}
+
+.inputs input {
+    margin-bottom: 13px;
+    border: none;
+    border-bottom: 2px solid #eee
+}
+
+.inputs input:focus {
+    margin-bottom: 13px;
+    border: none;
+    border-bottom: 2px solid #7B1FA2;
+    box-shadow: none
+}
+
+.inputs textarea {
+    margin-bottom: 13px;
+    border: none;
+    border-bottom: 2px solid #eee;
+    width: 100%;
+    resize: none
+}
+
+.inputs textarea:focus {
+    margin-bottom: 13px;
+    border: none;
+    border-bottom: 2px solid #7B1FA2;
+    box-shadow: none;
+    resize: none
+}
+
+.form-control {
+    padding: .375rem .25rem
+}
+
+.fa{
+    color: black;
+    font-size: 20px;
+}
+
+.ubicaciondemapa{
+    grid-column: 1 / span 4;
+    background-color:#1E1B16;
+}
+
+.container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color:aliceblue;
+
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contenedor-uno{
+    width: 50%;
+    height: auto;
+}
+.contenedor-dos{
+    width: 40%;
+    height: auto;
+}
+
+.contenedor-dos address strong{
+    font-family: Acme;
+    font-size: 20px;
+}
+
+.redes-sociales{
+    grid-column: 1 / span 4;
+    background-color: #1E1B16;
+}
+
+section #services {
+    text-align: center;
+    transform: translatez(0);
+  }
+  section #services h2 {
+    margin: 80px 0px 40px;
+    color: #fff;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  section #services li {
+    width: 120px;
+    height: 140px;
+    display: inline-block;
+    margin: 20px;
+    list-style: none;
+  }
+  section #services li div {
+    width: 120px;
+    height: 120px;
+    color: #74d4b3;
+    font-size: 3.4em;
+    text-align: center;
+    line-height: 120px;
+    background-color: #fff;
+    transition: all 0.5s ease;
+  }
+  section #services li a {
+    color: #77cc6d;
+  }
+  section #services li div:hover {
+    transform: rotate(360deg);
+    border-radius: 100px;
+  }
+  section #services li span {
+    width: 120px;
+    height: 20px;
+    display: block;
+    padding: 15px 0px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .credits a {
+    display: block;
+    text-align: center;
+    color: #74d4b3;
+    text-decoration: none;
+    font-size: 24px;
+    margin-top: 50px;
+    background: white;
+    padding: 20px;
+    max-width: 300px;
+  }
+
+  .fa-facebook{
+      color: blue !important;  
+  }
+
+  .fa-youtube{
+      color: red !important;
+  }
+
+  .fa-instagram{
+    color:rgb(240, 12, 209) ;
+  }
+
+  .fa-twitter{
+      color: rgb(0, 255, 255);
+  }
+
+/* ACA COMIENZA FOOTER (FOOTER)*/
+.footer{
+    background-color: #9CA741;
+    grid-column: 1 / span 4;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer p {
+    font-family: 'miFuente';
+    font-size: 15px;
+    margin-top: 40px;
+    color: white;
+}
+
+/*IMAGEN DEL FOOTER (FOOTER)*/
+.footer img{
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+/*PARRAFO DEL FOOTER (FOOTER)*/
+.footer p{
+    font-family: 'miFuente';
+    font-size: 15px;
+    margin-top: 40px;
+    color: white;
+}

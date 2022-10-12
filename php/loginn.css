@@ -1,0 +1,301 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* ACA EMPIEZA EL CONTENEDOR PRINCIPAL */
+.contenedor-principal{
+    width: 100%;
+    margin: auto;
+    background-color: #1E1B16;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@keyframes cambiar{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+/* ACA EMPIEZA EL HEADER  */
+.cabecera{
+    background-color: #9CA741;
+    grid-column: 1 / span 4;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/* EL TITULO FULL REGEDIT (HEADER) */
+.cabecera img{
+    width: 250px;
+    height: auto;
+}
+/* ICONO DEL CARRITO (HEADER) */
+.cabecera div img{
+    width: 85px;
+    height: 65px;
+    animation: bounce; 
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+/* LETRA DE SHOP REGEDIT (HEADER) */
+.cabecera div h1{
+    font-family: 'miFuente';
+    font-size: 50px;
+    margin-left: 7px;
+    color: white;
+    -webkit-text-stroke: 2px black;
+}
+@font-face{
+    font-family: 'miFuente';
+    src: url("letras/fuente1.ttf");
+}
+/* CONTENEDOR DE CABECERA SHOP (HEADER)*/
+.cabecera-shop{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+/* ACA EMPIEZA EL MENU  */
+.menu{
+    background-color: #867A60;
+    grid-column: 1 / span 4;
+
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+/* PROPIEDADES DE MENU (MENU)  */
+.menu a{
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    flex-grow: 1;
+    font-family: Acme;
+    font-size: 17px;
+}
+
+/* EFECTO AL PASAR EL MOUSE SOBRE EL ELEMENTO (MENU)  */
+.menu a:hover{
+    background-color: white;
+    color: #1E1B16;
+}
+
+/* ACA COMIENZA EL MAIN (MAIN)*/
+.main{
+    grid-column: 1/ span 4;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://c.tenor.com/-adSS2JSMrUAAAAd/booyah-video-game.gif");
+    background-repeat: no-repeat;
+    background-size: 112%;
+    min-height: 100vh;
+}
+
+/* ACA EMPIEZA LA IMAGEN (SECCION)*/
+.seccion{
+    grid-column: 1 / span 4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1E1B16;
+}
+
+/* CONTIENE EL LOGIN COMPLETO (LOGUEO)*/
+.logueo{
+    width: 400px;
+    height: 450px;
+    background-color: #F9FAFB;
+    color: white;
+    box-sizing: border-box;
+    padding: 70px 30px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/* LA IMAGEN DEL LOGIN (LOGUEO)*/
+.logueo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+/* TITULO LOGIN (LOGUEO)*/
+.logueo h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    color: #3F3D56;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700px;
+}
+
+/* LOS LABELS CORREO ELECTRONICO Y CONTRASEÑA (LOGUEO)*/
+.logueo label{
+    margin: 0;
+    padding: 5px 0;
+    font-weight: bold;
+    display: block;
+    color: #3F3D56;
+
+}
+
+/*CAJAS DE TEXTOS CORREO ELECTRONICO Y CONTRASEÑA (LOGUEO)*/
+.logueo .controles{
+    width: 100%;
+    margin-bottom: 20px;
+
+    border: none;
+    border-bottom: 1px solid #3F3D56;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #3F3D56;
+    font-size: 16px;
+}
+
+/*BOTON DEL LOGIN (LOGUEO)*/
+.logueo input[type='submit']{
+    border: none;
+    outline: none;
+    height: 50px;
+    background-color: #3F3D56;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+/*LOS LINKS REGISTRARTE AQUI Y OLVIDASTE TU CONTRASEÑA (LOGUEO)*/
+.logueo a{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 20px;
+    color:#3F3D56;
+}
+.logueo a:hover{
+    text-decoration: underline;
+    color: cornflowerblue;
+    transition: .5s;
+}
+
+
+/* FIGURE ES EL CONTENEDOR DE TODO EL EFECTO(SECCION)*/
+.seccion figure{
+    position: relative;
+    height: 300px;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0, 50);
+    cursor: pointer;
+}
+
+/*IMAGEN DEL EFECTO(SECCION)*/
+.seccion figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+/*OTRO CONTENEDOR QUE CONTIENE TITULO Y PARRAFO(SECCION)*/
+.seccion .soloContengo{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(156, 167, 65, 0.7);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+/* EFECTO DEL HOVER SOBRE EL CONTENEDOR FIGURE(SECCION)*/
+.seccion figure:hover > .soloContengo{
+    opacity: 1;
+    visibility: visible;
+}
+
+/*EFECTO SOBRE EL TITULO(SECCION)*/
+.seccion figure:hover > .soloContengo h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+/* ESTILOS AL TITULO ESTA ES UNA PRUEBAL EFECTO(SECCION)*/
+.soloContengo h3{
+    color: white;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    margin-top: 30px;
+}
+
+/* ESTILOS AL PARRAFO LOREM INSU(SECCION)*/
+.soloContengo p{
+    color: black;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+
+/* ACA COMIENZA FOOTER (FOOTER)*/
+.footer{
+    background-color: #9CA741;
+    grid-column: 1 / span 4;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/*IMAGEN DEL FOOTER (FOOTER)*/
+.footer img{
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+}
+/*PARRAFO DEL FOOTER (FOOTER)*/
+.footer p{
+    font-family: 'miFuente';
+    font-size: 15px;
+    margin-top: 40px;
+    color: white;
+}
